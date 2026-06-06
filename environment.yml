@@ -1,0 +1,34 @@
+# Conda 环境配置文件
+# 使用方法: conda env create -f environment.yml
+name: volcengine_tts
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python 版本
+  - python=3.8.20
+  
+  # Python 包管理
+  - pip
+  
+  # Qt 和多媒体支持
+  - pyside2
+  
+  # GStreamer 音频支持 (必须>=1.24以支持PulseAudio)
+  - gst-plugins-good>=1.24
+  - gst-plugins-base
+  - gst-plugins-bad
+  - gst-plugins-ugly
+  
+  # 音频输出支持
+  - pulseaudio
+  - pulseaudio-client
+  
+  # Glib 库 (必须使用2.80版本以避免符号冲突)
+  - glib=2.80
+  - libglib=2.80
+  
+  # 通过 pip 安装的 Python 包
+  - pip:
+    - websockets>=14.0
+
