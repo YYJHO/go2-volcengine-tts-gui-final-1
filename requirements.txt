@@ -1,0 +1,13 @@
+websockets>=14.0
+PySide2>=5.15.0
+
+# 注意: 以下包需要通过conda安装，pip安装可能会有兼容性问题
+# 使用 conda install -c conda-forge 安装以下包:
+# - gst-plugins-good>=1.24
+# - gst-plugins-base
+# - gst-plugins-bad
+# - gst-plugins-ugly
+# - pulseaudio-client
+# - glib=2.80
+# - libglib=2.80
+
